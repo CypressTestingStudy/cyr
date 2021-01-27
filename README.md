@@ -1,4 +1,6 @@
-# CYR Learning
+# CYR Learning 
+
+[![CypressLearn](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/detailed/nnkyhr&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/nnkyhr/runs)
 
 ## SetUp
 

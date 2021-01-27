@@ -1,9 +1,33 @@
 # CYR Learning
 
-Steps to install:
+## SetUp
 
+1. Configure a `cypress.json` file based on [cypress.sample.json](./cypress.sample.json) 
+
+1. Run
+```
 npm install
+```
+
+## Running
+
+#### Using cypress UI mode
+```bash
 npx cypress open
+```
+#### Using Headless mode
+```bash
+npx cypress run
+```
+#### Run specific test in Headless mode
+```bash
+npx cypress run --testFile.js
+```
+#### Run Headless mode with Dashboard Analysis
+```bash
+npx cypress run --record --key 49bfa993-ad20-464c-b7ab-d9d27ae262c0
+```
+
 
 Project Structure
 - All in English

@@ -1,12 +1,15 @@
 {
   "name": "cyr",
   "version": "1.0.0",
-  "description": "",
+  "description": "Cypress Learn Testing Expirience",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:run": "npx cypress run",
     "cy:verify": "npx cypress verify"
+  },
+  "eslintConfig": {
+  "extends": "react-app"
   },
   "author": "",
   "license": "ISC",

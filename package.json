@@ -18,5 +18,8 @@
     "cypress": "^6.3.0",
     "eslint-plugin-chai-friendly": "^0.6.0",
     "eslint-plugin-cypress": "^2.11.2"
+  },
+  "dependencies": {
+    "use-force-update": "^1.0.7"
   }
 }

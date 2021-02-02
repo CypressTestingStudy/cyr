@@ -1,3 +1,5 @@
 {
-    "projectId": "nnkyhr"
+    "projectId": "nnkyhr",
+    "chromeWebSecurity": false,
+    "video": false
 }

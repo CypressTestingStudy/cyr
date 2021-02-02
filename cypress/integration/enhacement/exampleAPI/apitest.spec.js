@@ -21,10 +21,4 @@ describe('API Testing 101', () => {
               expect(response.body.data).to.have.length(24);
           });
        });
-  
-    it ('POST - Create', () =>{
-      const item =  {"name":"Daniel","salary":"12000000","age":"30"};
-      cy.request('POST', '/create', item);
-    });
-  
   });

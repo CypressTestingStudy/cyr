@@ -4,7 +4,6 @@ about: Template to PR
 title: "[PR]-"
 labels: enhancement
 assignees: eduwinfuentes, hlperez07
-
 ---
 
 **What**:

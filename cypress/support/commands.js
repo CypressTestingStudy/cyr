@@ -26,13 +26,3 @@
 
 import '@testing-library/cypress/add-commands';
 
-
-Cypress.Commands.add('login', () => {
-    cy.visit('https://admin.test.hourly.io/login');
-    cy.get(':nth-child(1) > input').type('angels@lent.io');
-    cy.get(':nth-child(3) > input').type('Medellin2020');
-    cy.get('form').submit();
-    cy.wait (2000);
-    cy.get('.decorated-input').type('2222');
-    cy.get('form').submit();
-  });

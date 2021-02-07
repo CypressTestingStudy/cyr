@@ -23,13 +23,13 @@ npx cypress open
 #### Using Headless mode
 
 ```bash
-npx cypress run
+npx cypress run --headless --browser chrome
 ```
 
 #### Run specific test in Headless mode
 
 ```bash
-npx cypress run --testFile.js
+npx cypress run --spec folder/test.spec.js
 ```
 
 #### Run Headless mode with Dashboard Analysis
@@ -38,7 +38,13 @@ npx cypress run --testFile.js
 npx cypress run --record --key 49bfa993-ad20-464c-b7ab-d9d27ae262c0
 ```
 
-Project Structure
+#### Run Report
+
+```bash
+npx cypress run --reporter mochawesome
+```
+
+#### Project Structure
 
 - All in English
 - All in CamelCase

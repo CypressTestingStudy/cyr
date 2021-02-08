@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-02-07T17:04:21.243Z",
+    "end": "2021-02-07T17:04:23.003Z",
+    "duration": 1760,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2a58c3f2-63ea-4e1f-8dac-1eb0058fdbf2",
+      "title": "",
+      "fullFile": "cypress/integration/API_example.spec.js",
+      "file": "cypress/integration/API_example.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "badf332d-154d-447c-9a2d-dde2d545fd3a",
+          "title": "API Testing 101",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "GET - Read Only ",
+              "fullTitle": "API Testing 101 GET - Read Only ",
+              "timedOut": null,
+              "duration": 600,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request(\"GET\", \"/employees\");",
+              "err": {},
+              "uuid": "97000a9e-1215-4cf9-ad51-0562e2a0bf2d",
+              "parentUUID": "badf332d-154d-447c-9a2d-dde2d545fd3a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "GET - Read Step One ",
+              "fullTitle": "API Testing 101 GET - Read Step One ",
+              "timedOut": null,
+              "duration": 121,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Get a Response and validate the status code\ncy.request(\"GET\", \"/employees\").then(function (response) {\n  expect(response).to.have.property(\"status\", 200);\n  expect(response.body).to.not.be[\"null\"];\n  expect(response.body.data).to.have.length(24);\n});",
+              "err": {},
+              "uuid": "a7408672-f6d9-4908-9720-e8aa89fc51eb",
+              "parentUUID": "badf332d-154d-447c-9a2d-dde2d545fd3a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "97000a9e-1215-4cf9-ad51-0562e2a0bf2d",
+            "a7408672-f6d9-4908-9720-e8aa89fc51eb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 721,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

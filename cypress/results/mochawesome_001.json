@@ -1,0 +1,219 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-02-07T17:05:51.199Z",
+    "end": "2021-02-07T17:05:53.605Z",
+    "duration": 2406,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6f32eec3-691f-400a-a33b-b0fd153bdcbc",
+      "title": "",
+      "fullFile": "cypress/integration/API_example.spec.js",
+      "file": "cypress/integration/API_example.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6ee5e5f6-0a61-4049-b188-d02658d0bf85",
+          "title": "API Testing 101",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "GET - Read Only ",
+              "fullTitle": "API Testing 101 GET - Read Only ",
+              "timedOut": null,
+              "duration": 582,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request(\"GET\", \"/employees\");",
+              "err": {},
+              "uuid": "5cd3edb0-f631-4e19-9ec9-25d36666b936",
+              "parentUUID": "6ee5e5f6-0a61-4049-b188-d02658d0bf85",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "GET - Read Step One ",
+              "fullTitle": "API Testing 101 GET - Read Step One ",
+              "timedOut": null,
+              "duration": 135,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Get a Response and validate the status code\ncy.request(\"GET\", \"/employees\").then(function (response) {\n  expect(response).to.have.property(\"status\", 200);\n  expect(response.body).to.not.be[\"null\"];\n  expect(response.body.data).to.have.length(24);\n});",
+              "err": {},
+              "uuid": "673f6d8d-7ce4-4bd5-970d-d0db1e7c8f00",
+              "parentUUID": "6ee5e5f6-0a61-4049-b188-d02658d0bf85",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "GET - Read Step One ",
+              "fullTitle": "API Testing 101 GET - Read Step One ",
+              "timedOut": null,
+              "duration": 148,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Get a Response and validate the status code\ncy.request(\"GET\", \"/employees\").then(function (response) {\n  expect(response).to.have.property(\"status\", 200);\n  expect(response.body).to.not.be[\"null\"];\n  expect(response.body.data).to.have.length(24);\n});",
+              "err": {},
+              "uuid": "a1310cc6-bd86-4be7-a2b6-6876e5e7e8af",
+              "parentUUID": "6ee5e5f6-0a61-4049-b188-d02658d0bf85",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "GET - Read Step One ",
+              "fullTitle": "API Testing 101 GET - Read Step One ",
+              "timedOut": null,
+              "duration": 127,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Get a Response and validate the status code\ncy.request(\"GET\", \"/employees\").then(function (response) {\n  expect(response).to.have.property(\"status\", 200);\n  expect(response.body).to.not.be[\"null\"];\n  expect(response.body.data).to.have.length(24);\n});",
+              "err": {},
+              "uuid": "ec817453-2c1e-4669-84d2-1441283dff86",
+              "parentUUID": "6ee5e5f6-0a61-4049-b188-d02658d0bf85",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "GET - Read Step One ",
+              "fullTitle": "API Testing 101 GET - Read Step One ",
+              "timedOut": null,
+              "duration": 125,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Get a Response and validate the status code\ncy.request(\"GET\", \"/employees\").then(function (response) {\n  expect(response).to.have.property(\"status\", 200);\n  expect(response.body).to.not.be[\"null\"];\n  expect(response.body.data).to.have.length(24);\n});",
+              "err": {},
+              "uuid": "a3fa68b8-5b34-42fe-89a5-4648f6bf6a9c",
+              "parentUUID": "6ee5e5f6-0a61-4049-b188-d02658d0bf85",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "GET - Read Step One ",
+              "fullTitle": "API Testing 101 GET - Read Step One ",
+              "timedOut": null,
+              "duration": 118,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Get a Response and validate the status code\ncy.request(\"GET\", \"/employees\").then(function (response) {\n  expect(response).to.have.property(\"status\", 200);\n  expect(response.body).to.not.be[\"null\"];\n  expect(response.body.data).to.have.length(24);\n});",
+              "err": {},
+              "uuid": "8e8390aa-7b29-45ad-b8f9-d34969d87acd",
+              "parentUUID": "6ee5e5f6-0a61-4049-b188-d02658d0bf85",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "GET - Read Step One ",
+              "fullTitle": "API Testing 101 GET - Read Step One ",
+              "timedOut": null,
+              "duration": 117,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Get a Response and validate the status code\ncy.request(\"GET\", \"/employees\").then(function (response) {\n  expect(response).to.have.property(\"status\", 200);\n  expect(response.body).to.not.be[\"null\"];\n  expect(response.body.data).to.have.length(24);\n});",
+              "err": {},
+              "uuid": "5439b5cc-e709-47c8-bc5c-497005394362",
+              "parentUUID": "6ee5e5f6-0a61-4049-b188-d02658d0bf85",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5cd3edb0-f631-4e19-9ec9-25d36666b936",
+            "673f6d8d-7ce4-4bd5-970d-d0db1e7c8f00",
+            "a1310cc6-bd86-4be7-a2b6-6876e5e7e8af",
+            "ec817453-2c1e-4669-84d2-1441283dff86",
+            "a3fa68b8-5b34-42fe-89a5-4648f6bf6a9c",
+            "8e8390aa-7b29-45ad-b8f9-d34969d87acd",
+            "5439b5cc-e709-47c8-bc5c-497005394362"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1352,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

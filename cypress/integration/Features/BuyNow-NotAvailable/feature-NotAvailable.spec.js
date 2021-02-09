@@ -9,10 +9,10 @@ describe("User not logged and try to buy, but Product is not available", functio
 
     it("Should have next message - Item is currently not available", function () {
         cy.get('#twotabsearchtextbox')
-        .type('echo input alexa device')
+        .type('PlayStation 5')
         .get('#nav-search-submit-button')
         .click();
-        cy.contains('Echo Flex - Plug-in mini smart speaker with Alexa')
+        cy.contains('Sony Playstation 5')
         .click();
         cy.get('#exports_desktop_outOfStock_buybox_message_feature_div > .a-section > .a-color-price')
         .should('have.text', 'Currently unavailable.');

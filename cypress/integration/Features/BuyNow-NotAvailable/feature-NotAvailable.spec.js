@@ -8,13 +8,9 @@ describe("User not logged and try to buy, but Product is not available", functio
         })
 
     it("Should have next message - Item is currently not available", function () {
-        cy.get('#twotabsearchtextbox')
-        .type('PlayStation 5')
-        .get('#nav-search-submit-button')
-        .click();
-        cy.contains('Sony Playstation 5')
-        .click();
-        cy.get('#exports_desktop_outOfStock_buybox_message_feature_div > .a-section > .a-color-price')
+        cy.get('#twotabsearchtextbox').type('sony playstation 5{enter}')
+        cy.get('[alt="Sony Playstation 5"]').click();
+        cy.get('.a-spacing-small > .a-color-price').contains('Currently unavailable.')
         .should('have.text', 'Currently unavailable.');
     });
   });

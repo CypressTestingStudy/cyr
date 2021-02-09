@@ -1,7 +1,6 @@
 describe("Add available Item to the cart", function () {
   it("Select more than one product and add to the cart", function () {
     cy.visit("https://www.amazon.com/");
-    cy.wait(1500);
     cy.get('input[id="twotabsearchtextbox"]').type("xiaomi note 9 case");
     cy.get('input[id="nav-search-submit-button"]').click();
     cy.get(
@@ -9,10 +8,11 @@ describe("Add available Item to the cart", function () {
     )
       .first()
       .click();
-    cy.wait(500);
     cy.get('span[id="a-autoid-0"]').click();
     let cantidad = 6;
-    cy.get('div[class="a-popover-inner"]').contains(cantidad).click();
+    cy.get('div[class^="a-popover-inner"]')
+      .contains(parseInt(cantidad))
+      .click();
     cy.get('input[id="add-to-cart-button"]').click();
     cy.get('span[id="nav-cart-count"]').should("contain", cantidad);
   });

@@ -19,5 +19,12 @@ describe("API Testing 101", function () {
       expect(response.body).to.not.be.null;
       expect(response.body.data).to.have.length(24);
     });
+    it("GET - Read Step One ", () => {
+      //Get a Response and validate the status code
+      cy.request("GET", "/employees").then((response) => {
+        expect(response).to.have.property("status", 200);
+        expect(response.body).to.not.be.null;
+        expect(response.body.data).to.have.length(24);
+      });
   });
 });

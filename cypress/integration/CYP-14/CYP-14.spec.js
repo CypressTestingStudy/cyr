@@ -3,6 +3,6 @@
 
 import { CYP14 } from "../../Functions/CYP-14";
 
-describe("my first case with functional design", function () {
-  it("My first test with other selectors and new tab", CYP14);
+describe("CYP-14 add to cart without login increasing amount", function () {
+  it("CYP-14 add to cart without login increasing amount", CYP14);
 });

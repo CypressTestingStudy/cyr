@@ -29,8 +29,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "./node_modules/.bin/cypress run"
+      "pre-commit": "lint-staged"
     }
   },
   "cypress-cucumber-preprocessor": {

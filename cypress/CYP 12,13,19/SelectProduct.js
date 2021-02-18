@@ -6,11 +6,11 @@ export function searchPage() {
   cy.wait(2000);
 }
 export function selectProduct() {
-  cy.get('input[id="twotabsearchtextbox"]').type("xiaomi note 9 case");
+  cy.get('input[id="twotabsearchtextbox"]').type("mac maybelline volumen");
   cy.get('input[id="nav-search-submit-button"]').click();
   cy.wait(2000);
   cy.get(
-    'img[src="https://m.media-amazon.com/images/I/81hV6CPuX2L._AC_UL320_.jpg"]'
+    'img[src="https://m.media-amazon.com/images/I/61nJzqVYlAL._AC_UL320_.jpg"]'
   )
     .first()
     .click();

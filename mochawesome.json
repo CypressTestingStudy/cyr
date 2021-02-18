@@ -1,0 +1,415 @@
+{
+  "stats": {
+    "suites": 5,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-02-18T14:19:35.337Z",
+    "end": "2021-02-18T14:20:44.636Z",
+    "duration": 59130,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "39a89f66-3399-4d36-a0d4-0904885ebad4",
+      "title": "",
+      "fullFile": "cypress/integration/amazon/BuyNowVisitor.spec.js",
+      "file": "cypress/integration/amazon/BuyNowVisitor.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "05992885-7982-4e58-b8d2-3134996562d7",
+          "title": "Test Suite for not logging user",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "[BuyNow] Buy a product since Cart screen and the user is not logged in",
+              "fullTitle": "Test Suite for not logging user [BuyNow] Buy a product since Cart screen and the user is not logged in",
+              "timedOut": null,
+              "duration": 11761,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _Products.addProduct)();\n(0, _Products.buyNow)();",
+              "err": {},
+              "uuid": "f02494d3-e4f7-434b-85aa-52dbc9a65b1e",
+              "parentUUID": "05992885-7982-4e58-b8d2-3134996562d7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f02494d3-e4f7-434b-85aa-52dbc9a65b1e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 11761,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "97be71dc-d0e7-4bf1-a190-6961e6edeb04",
+      "title": "",
+      "fullFile": "cypress/integration/amazon/CPY-21-22-6.spec.js",
+      "file": "cypress/integration/amazon/CPY-21-22-6.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "509f3988-afdc-498f-81ee-7e98984b93c0",
+          "title": "CPY-21",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "New user",
+              "fullTitle": "CPY-21 New user",
+              "timedOut": null,
+              "duration": 3994,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"/\");\ncy.get(\"#nav-link-accountList\").click();\ncy.get(\"#createAccountSubmit\").click();\ncy.get(\"#ap_customer_name\").type(\"Christian\");\ncy.get(\"#ap_email\").type(\"cristiantbon@gmail.com\");\ncy.get(\"#ap_password\").type(\"123456\");\ncy.get(\"#ap_password_check\").type(\"123456\");\ncy.get('label[for=\"ap_customer_name\"]').should(\"have.text\", \"\\n      Your name\\n    \");",
+              "err": {},
+              "uuid": "c43987b8-ae36-4264-8775-ed165fb5bd5c",
+              "parentUUID": "509f3988-afdc-498f-81ee-7e98984b93c0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c43987b8-ae36-4264-8775-ed165fb5bd5c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3994,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "e2540c35-c1f0-438d-83ba-2e4d6fccf361",
+          "title": "CPY-22",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "New user",
+              "fullTitle": "CPY-22 New user",
+              "timedOut": null,
+              "duration": 3946,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"/\");\ncy.get(\"#nav-link-accountList\").click();\ncy.get(\"#createAccountSubmit\").click();\ncy.get(\"#ap_customer_name\").type(\"Christian\");\ncy.get(\"#ap_email\").type(\"cristiantbon@gmail.com\");\ncy.get(\"#ap_password\").type(\"123456\");\ncy.get(\"#ap_password_check\").type(\"123456\");\ncy.get('label[for=\"ap_customer_name\"]').should(\"have.text\", \"\\n      Your name\\n    \");\ncy.get(\"#continue\").click();\ncy.get('h4[class=\"a-alert-heading\"]').should(\"have.text\", \"Important Message!Email address already in use\");",
+              "err": {},
+              "uuid": "6243384d-7939-4dff-8cfc-de859f41d230",
+              "parentUUID": "e2540c35-c1f0-438d-83ba-2e4d6fccf361",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6243384d-7939-4dff-8cfc-de859f41d230"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3946,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "36c97f90-15b4-4b40-9269-4940f9a762d1",
+          "title": "CPY-6",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "New user",
+              "fullTitle": "CPY-6 New user",
+              "timedOut": null,
+              "duration": 2445,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"/\");\ncy.get(\"#nav-link-accountList\").click();\ncy.get(\"#createAccountSubmit\").click();\ncy.get(\"#ap_customer_name\").type(\"Christian\");\ncy.get(\"#ap_email\").type(\"cristiantbon@gmail.com\");\ncy.get(\"#continue\").click();\ncy.get(\"#auth-password-missing-alert\").should(\"have.text\", \"\\n  Enter your password\\n\");",
+              "err": {},
+              "uuid": "0738057b-6df6-4809-b491-098344ab3337",
+              "parentUUID": "36c97f90-15b4-4b40-9269-4940f9a762d1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0738057b-6df6-4809-b491-098344ab3337"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2445,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "5e92c19c-c5fc-4092-a7c4-7bb9a5582dd7",
+      "title": "",
+      "fullFile": "cypress/integration/amazon/CYP-14.spec.js",
+      "file": "cypress/integration/amazon/CYP-14.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4ca165a2-bc64-4b29-9eda-b98d2685a7f3",
+          "title": "CYP-14 add to cart without login increasing amount",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "CYP-14 add to cart without login increasing amount",
+              "fullTitle": "CYP-14 add to cart without login increasing amount CYP-14 add to cart without login increasing amount",
+              "timedOut": null,
+              "duration": 14674,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"/\");\ncy.wait(3000);\ncy.get(\"#twotabsearchtextbox\").type(\"playstation\");\ncy.wait(3000);\ncy.get(\"#nav-search-submit-button\").click();\ncy.get('[data-asin=\"B07C438TMN\"] > :nth-child(1) > .celwidget > .s-include-content-margin > .a-spacing-medium > :nth-child(2) > :nth-child(1) > .sg-col-inner > .a-spacing-none > .rush-component > .a-link-normal > .a-section > .s-image').click();\ncy.get(\"#a-autoid-0-announce\").click();\ncy.get(\"#quantity_1\").click();\ncy.get(\"#add-to-cart-button\").click();\ncy.get(\".a-spacing-micro > .a-size-medium > :nth-child(1)\").should(\"have.text\", \"Cart subtotal (2 items): \");",
+              "err": {},
+              "uuid": "b548b224-5935-4b0e-8abf-9bc68a94d7c2",
+              "parentUUID": "4ca165a2-bc64-4b29-9eda-b98d2685a7f3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b548b224-5935-4b0e-8abf-9bc68a94d7c2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 14674,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "7f1201f8-5770-462c-ba19-2deed976361e",
+      "title": "",
+      "fullFile": "cypress/integration/amazon/CYP-2.spec.js",
+      "file": "cypress/integration/amazon/CYP-2.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "35d0ef3b-10c1-43da-ae39-71a8f44f9321",
+          "title": "Test Suite for egiftCards",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "[NavBar] Principal Menu",
+              "fullTitle": "Test Suite for egiftCards [NavBar] Principal Menu",
+              "timedOut": null,
+              "duration": 8321,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _Navbar.navBarCheck)();\n(0, _Navbar.loginNow)();",
+              "err": {},
+              "uuid": "ca08324a-ba48-4cb2-a810-bd9da0193018",
+              "parentUUID": "35d0ef3b-10c1-43da-ae39-71a8f44f9321",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ca08324a-ba48-4cb2-a810-bd9da0193018"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8321,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "2945bb1b-5b83-4c95-89e7-64d261037b55",
+      "title": "",
+      "fullFile": "cypress/integration/amazon/buyFromCartShop.spec.js",
+      "file": "cypress/integration/amazon/buyFromCartShop.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5b53c4a0-da51-435a-9edf-17956ccc79bf",
+          "title": "Test Suite for not logging user",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "[BuyNow] Buy a product when the user is on the Cart screen",
+              "fullTitle": "Test Suite for not logging user [BuyNow] Buy a product when the user is on the Cart screen",
+              "timedOut": null,
+              "duration": 13989,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _Products.addProduct)();\n(0, _Products.buyFromCart)();",
+              "err": {},
+              "uuid": "93797459-4df9-4fd8-8eb0-fc644d7e64e7",
+              "parentUUID": "5b53c4a0-da51-435a-9edf-17956ccc79bf",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "93797459-4df9-4fd8-8eb0-fc644d7e64e7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13989,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

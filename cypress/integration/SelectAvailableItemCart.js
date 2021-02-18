@@ -21,7 +21,6 @@ describe("Add available Item to the cart", function () {
 describe("Buy an available item", function () {
   it("Select one product and click on Buy Now", function () {
     searchPage();
-    cy.wait(1000);
     selectProduct2();
     buyNowItem();
   });

@@ -3,11 +3,12 @@ const cantidad = 6;
 
 export function searchPage() {
   cy.visit("https://www.amazon.com/");
+  cy.wait(2000);
 }
 export function selectProduct() {
-  /*Navigates over Amazon web page and add one product without logging*/
   cy.get('input[id="twotabsearchtextbox"]').type("xiaomi note 9 case");
   cy.get('input[id="nav-search-submit-button"]').click();
+  cy.wait(2000);
   cy.get(
     'img[src="https://m.media-amazon.com/images/I/81hV6CPuX2L._AC_UL320_.jpg"]'
   )
@@ -16,7 +17,6 @@ export function selectProduct() {
 }
 
 export function selectProduct2() {
-  /*Navigates over Amazon web page and add one product without logging*/
   cy.get('input[id="twotabsearchtextbox"]').type("Lipstick MAC");
   cy.get('input[id="nav-search-submit-button"]').click();
   cy.get(

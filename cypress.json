@@ -1,5 +1,8 @@
 {
+  "baseUrl": "https://www.amazon.com/",
   "projectId": "nnkyhr",
   "chromeWebSecurity": false,
-  "video": false
+  "video": false,
+  "viewportWidth": 1280,
+  "viewportHeight": 800
 }

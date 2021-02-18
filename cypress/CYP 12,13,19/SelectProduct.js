@@ -14,6 +14,7 @@ export function selectProduct() {
   )
     .first()
     .click();
+  cy.wait(1000);
 }
 
 export function selectProduct2() {
@@ -24,6 +25,7 @@ export function selectProduct2() {
   )
     .first()
     .click();
+  cy.wait(1000);
 }
 
 export function selectQuantity() {

@@ -18,3 +18,11 @@ export function buyNow() {
   cy.get('[role="button"]').contains("Proceed to checkout").click();
   cy.title().should("eq", "Amazon Sign-In", message);
 }
+
+export function buyFromCart() {
+  /*Navigates to the cartshop menu and click on buy now without logging*/
+
+  cy.get("#nav-cart-count-container").click();
+  cy.get('[name="proceedToRetailCheckout"]').click();
+  cy.title().should("eq", "Amazon Sign-In", message);
+}

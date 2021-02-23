@@ -26,3 +26,15 @@ export function buyFromCart() {
   cy.get('[name="proceedToRetailCheckout"]').click();
   cy.title().should("eq", "Amazon Sign-In", message);
 }
+
+export function addProductNotA() {
+  /*Navigates over Amazon web page and add one product without logging*/
+
+  cy.visit("/");
+  cy.get('[role="search"]').type("Play Station 5{ENTER}");
+  cy.get("#nav-search-submit-button").click();
+  cy.get('[alt="PlayStation 5 Console"]').click();
+
+  cy.get("#wishListMainButton-announce").should("be.visible");
+  cy.get("#dd-to-cart-button").should("not.exist");
+}

@@ -1,0 +1,13 @@
+{
+  "products": [],
+  "discounts": [],
+  "shippingCost": "$0.00",
+  "shippingCostFloat": 0,
+  "wrappingCost": "$0.00",
+  "nbTotalProducts": 0,
+  "total": "$0.00",
+  "productTotal": "$0.00",
+  "freeShipping": "$0.00",
+  "freeShippingFloat": 0,
+  "hasError": false
+}

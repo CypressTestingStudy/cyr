@@ -4,5 +4,12 @@
   "chromeWebSecurity": false,
   "video": false,
   "viewportWidth": 1280,
-  "viewportHeight": 800
+  "viewportHeight": 800,
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "cypress/results",
+    "overwrite": false,
+    "html": false,
+    "json": true
+  }
 }

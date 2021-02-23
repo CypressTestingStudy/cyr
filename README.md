@@ -38,6 +38,13 @@ npx cypress run --testFile.js
 npx cypress run --record --key 49bfa993-ad20-464c-b7ab-d9d27ae262c0
 ```
 
+
+
+Generate With Reports: npx cypress run --reporter mochawesome
+Combine the reports: npx mochawesome-merge "cypress/results/*.json" > mochawesome.json
+Generate the HTML Report: npx marge mochawesome.json
+
+
 Project Structure
 
 - All in English

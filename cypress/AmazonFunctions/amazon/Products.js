@@ -5,7 +5,7 @@ const message = "Redirected successfully, you rock!!!";
 export function addProduct() {
   /*Navigates over Amazon web page and add one product without logging*/
 
-  cy.visit("https://www.amazon.com/");
+  cy.visit("/");
   cy.get('[role="search"]').type("Kindle{ENTER}");
   cy.get("#nav-search-submit-button").click();
   cy.get(

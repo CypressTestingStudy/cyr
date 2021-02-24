@@ -25,3 +25,7 @@
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
 import "@testing-library/cypress/add-commands";
+
+Cypress.Commands.add('amazonWebSite', function () {
+        cy.visit('https://www.amazon.com/');
+});

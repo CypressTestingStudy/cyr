@@ -4,7 +4,7 @@
 
 describe("CPY-21", function () {
     it("New user", function () {
-        cy.visit("/");
+        cy.amazonWebSite();
         cy.get("#nav-link-accountList").click();
         cy.get("#createAccountSubmit").click();
         cy.get("#ap_customer_name").type("Christian");
@@ -22,7 +22,7 @@ describe("CPY-21", function () {
 
 describe("CPY-22", function () {
     it("New user", function () {
-        cy.visit("/");
+        cy.amazonWebSite();
         cy.get("#nav-link-accountList").click();
         cy.get("#createAccountSubmit").click();
         cy.get("#ap_customer_name").type("Christian");
@@ -45,7 +45,7 @@ describe("CPY-22", function () {
 
 describe("CPY-6", function () {
     it("New user", function () {
-        cy.visit("/");
+        cy.amazonWebSite();
         cy.get("#nav-link-accountList").click();
         cy.get("#createAccountSubmit").click();
         cy.get("#ap_customer_name").type("Christian");

@@ -5,7 +5,7 @@ const message = "Redirected successfully, you rock!!!";
 export function addProduct() {
   /*Navigates over Amazon web page and add one product without logging*/
 
-  cy.visit("/");
+  cy.amazonWebSite();
   cy.get('[role="search"]').type("Kindle{ENTER}");
   cy.get("#nav-search-submit-button").click();
   cy.get(
@@ -30,7 +30,7 @@ export function buyFromCart() {
 export function addProductNotA() {
   /*Navigates over Amazon web page and add one product without logging*/
 
-  cy.visit("/");
+  cy.amazonWebSite();
   cy.get('[role="search"]').type("Play Station 5{ENTER}");
   cy.get("#nav-search-submit-button").click();
   cy.get('[alt="PlayStation 5 Console"]').click();

@@ -2,7 +2,7 @@
 /// <reference types="cypress" />
 
 export function CYP14() {
-  cy.visit("/");
+  cy.amazonWebSite();
   cy.wait(3000);
   cy.get("#twotabsearchtextbox").type("playstation");
   cy.wait(3000);

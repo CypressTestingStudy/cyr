@@ -2,7 +2,7 @@
 const cantidad = 6;
 
 export function searchPage() {
-  cy.visit("https://www.amazon.com/");
+  cy.amazonWebSite();
   cy.wait(2000);
 }
 export function selectProduct() {

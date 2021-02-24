@@ -1,10 +1,14 @@
 /// <reference types="Cypress" />
 
-import { loginNow, navBarCheck } from "../../AmazonFunctions/amazon/Navbar";
+import {loginOk} from "../../AmazonFunctions/amazon/Login";
 
-describe("Test Suite for egiftCards", function () {
-  it("[NavBar] Principal Menu", function () {
-    navBarCheck();
-    loginNow();
+describe("Test Suite for Login Scenarios", function () {
+  
+  beforeEach(function () {
+    cy.loginAmazon({email: 'giracros@me.com', pwd: 'Temporal123'});
   });
+  it("[Login] Login OK", function () {
+    loginOk();
+  });
+
 });

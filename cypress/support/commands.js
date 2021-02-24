@@ -28,4 +28,14 @@ import "@testing-library/cypress/add-commands";
 
 Cypress.Commands.add('amazonWebSite', function () {
         cy.visit('https://www.amazon.com/');
+        cy.wait(3000);
+});
+
+Cypress.Commands.add('loginAmazon', function (user) {
+        cy.visit('https://www.amazon.com/');
+        cy.contains('Sign in').click();
+        cy.get('#ap_email').clear().type(user.email);
+        cy.get('.a-button-inner > #continue').click();
+        cy.get('#ap_password').clear().type(user.pwd);
+        cy.get('#signInSubmit').click();
 });

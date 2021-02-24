@@ -8,7 +8,7 @@ import {
   checkCart,
   selectProduct2,
   buyNowItem,
-} from "../CYP 12,13,19/SelectProduct";
+} from "../../AmazonFunctions/amazon/SelectProduct";
 describe("Add available Item to the cart", function () {
   it("Select more than one product and add to the cart", function () {
     searchPage();

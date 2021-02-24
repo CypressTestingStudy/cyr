@@ -3,7 +3,7 @@
 const message = "Redirected successfully, you rock!!!";
 
 export function navBarCheck() {
-  cy.visit("/");
+  cy.amazonWebSite();
   cy.get("#nav-hamburger-menu").click();
   cy.get('[data-menu-id="27"]').click();
   cy.contains("eGift cards").click();

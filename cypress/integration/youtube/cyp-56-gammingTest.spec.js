@@ -43,11 +43,6 @@ describe("TS Gaming Video Player - Youtube", function () {
    it("[TC09] Mini Repro button check", function () {
     cy.get('.ytp-ad-skip-button').should("be.visible").click();
    });
-
-   it("[TC10] Mini Repro go back button check", function () {
-    cy.get('.ytp-miniplayer-scrim').should("be.visible").click();
-   });
-   
-   
+      
 
 });

@@ -26,5 +26,8 @@ class VideoPage {
   getLyrics() {
     return cy.get(".ytp-caption-segment");
   }
+  getScrollBarMedia() {
+    return cy.get(".ytp-progress-bar-padding");
+  }
 }
 export default VideoPage;

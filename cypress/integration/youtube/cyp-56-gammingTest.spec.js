@@ -44,5 +44,20 @@ describe("TS Gaming Video Player - Youtube", function () {
     cy.get('.ytp-ad-skip-button').should("be.visible").click();
    });
       
+   it("[TC09] Mini Repro button check", function () {
+    cy.get('.ytp-ad-skip-button').should("be.visible").click();
+   });
+
+   it("[TC09] Mini Repro button check", function () {
+    cy.get('.ytp-ad-skip-button').should("be.visible").click();
+   });
+
+   it("[TC09] Mini Repro button check", function () {
+    cy.get('.ytp-ad-skip-button').should("be.visible").click();
+   });
+   
+   it("[TC09] Mini Repro button check", function () {
+    cy.get('.ytp-ad-skip-button').should("be.visible").click();
+   });
 
 });

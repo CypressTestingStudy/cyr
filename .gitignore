@@ -124,11 +124,6 @@ dist
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
 
-
-# In order to check that all works perfect
-package-lock.json
-package.json
-
 # Mochafile
 mochawesome.json
 

@@ -2,6 +2,8 @@
 
 [![CypressLearn](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/detailed/nnkyhr&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/nnkyhr/runs)
 
+[![Chrome headless](https://github.com/CypressTestingStudy/cyr/actions/workflows/main.yml/badge.svg)](https://github.com/CypressTestingStudy/cyr/actions/workflows/main.yml)
+
 ## SetUp
 
 1. Configure a `cypress.json` file based on [cypress.sample.json](./cypress.sample.json)

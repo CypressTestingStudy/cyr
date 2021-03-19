@@ -10,8 +10,8 @@
 
 1. Run
 
-```
-npm install
+```bash
+npm ci
 ```
 
 ## Running
@@ -42,10 +42,23 @@ npx cypress run --record --key 49bfa993-ad20-464c-b7ab-d9d27ae262c0
 
 
 
-Generate With Reports: npx cypress run --reporter mochawesome
-Combine the reports: npx mochawesome-merge "cypress/results/*.json" > mochawesome.json
-Generate the HTML Report: npx marge mochawesome.json
+Generate With Reports: 
 
+```bash
+npx cypress run --reporter mochawesome
+```
+
+Combine the reports: 
+
+```bash
+npx mochawesome-merge "cypress/results/*.json" > mochawesome.json
+```
+
+Generate the HTML Report: 
+
+```bash
+npx merge mochawesome.json
+```
 
 Project Structure
 

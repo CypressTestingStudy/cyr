@@ -1,7 +1,7 @@
 /// <reference types ="Cypress"/>
-import HomePage from "../pageObjectsYouTube/HomePage";
-import MusicPage from "../pageObjectsYouTube/MusicPage";
-import VideoPage from "../pageObjectsYouTube/VideoPage";
+import HomePage from "../../functions/youtube/HomePage";
+import MusicPage from "../../functions/youtube/MusicPage";
+import VideoPage from "../../functions/youtube/VideoPage";
 describe("Music module on YouTube", function () {
   before(function () {
     cy.fixture("example").then(function (data) {

@@ -39,26 +39,3 @@ Cypress.Commands.add("loginAmazon", function (user) {
   cy.get("#ap_password").clear().type(user.pwd);
   cy.get("#signInSubmit").click();
 });
-
-Cypress.Commands.add("visitYoutube", function () {
-  cy.visit("https://www.youtube.com");
-});
-
-Cypress.Commands.add("reproduceVideo", function (category) {
-  const myCategory = 'a[title="' + category + '"]';
-  cy.get("#guide-icon").click();
-  cy.get(myCategory, { timeout: 3000 }).click();
-  cy.wait(2000);
-  cy.get('[title="Sports"]').contains("Sports");
-  cy.get("#hero-title").click({ force: true });
-  cy.get("div#container.style-scope.ytd-playlist-panel-renderer")
-    .eq(0)
-    .then(function (video) {
-      return video[0].baseURI;
-    })
-    .as("videoURL");
-  cy.get("@videoURL").then((url) => {
-    cy.visit(url);
-    cy.wait(30000);
-  });
-});

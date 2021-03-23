@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 
-import {loginOk} from "../../AmazonFunctions/amazon/Login";
+import {loginOk} from "../../functions/amazon/Login";
 
 describe("Test Suite for Login Scenarios", function () {
   

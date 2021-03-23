@@ -2,14 +2,16 @@
 
 [![CypressLearn](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/detailed/nnkyhr&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/nnkyhr/runs)
 
+[![Chrome headless](https://github.com/CypressTestingStudy/cyr/actions/workflows/main.yml/badge.svg)](https://github.com/CypressTestingStudy/cyr/actions/workflows/main.yml)
+
 ## SetUp
 
 1. Configure a `cypress.json` file based on [cypress.sample.json](./cypress.sample.json)
 
 1. Run
 
-```
-npm install
+```bash
+npm ci
 ```
 
 ## Running
@@ -40,10 +42,23 @@ npx cypress run --record --key 49bfa993-ad20-464c-b7ab-d9d27ae262c0
 
 
 
-Generate With Reports: npx cypress run --reporter mochawesome
-Combine the reports: npx mochawesome-merge "cypress/results/*.json" > mochawesome.json
-Generate the HTML Report: npx marge mochawesome.json
+Generate With Reports: 
 
+```bash
+npx cypress run --reporter mochawesome
+```
+
+Combine the reports: 
+
+```bash
+npx mochawesome-merge "cypress/results/*.json" > mochawesome.json
+```
+
+Generate the HTML Report: 
+
+```bash
+npx merge mochawesome.json
+```
 
 Project Structure
 

@@ -2,6 +2,7 @@ import "@testing-library/cypress/add-commands";
 
 Cypress.Commands.add("amazonWebSite", function () {
   cy.visit("https://www.amazon.com/");
+
 });
 
 Cypress.Commands.add("loginAmazon", function (user) {

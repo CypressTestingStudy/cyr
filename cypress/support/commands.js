@@ -39,8 +39,3 @@ Cypress.Commands.add("loginAmazon", function (user) {
   cy.get("#ap_password").clear().type(user.pwd);
   cy.get("#signInSubmit").click();
 });
-
-Cypress.Commands.add("youtubeWebSite", function () {
-  cy.visit("https://www.youtube.com/");
-  cy.wait(1000);
-});

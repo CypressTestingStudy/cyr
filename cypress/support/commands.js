@@ -43,20 +43,4 @@ Cypress.Commands.add("loginAmazon", function (user) {
 Cypress.Commands.add("youtubeWebSite", function () {
   cy.visit("https://www.youtube.com/");
   cy.wait(1000);
-
-  //Selectiong the filter
-  cy.get("#start > #guide-button > #button > #guide-icon")
-    .should("be.visible")
-    .click();
-  cy.get(":nth-child(8) > #endpoint > paper-item.style-scope").click();
-  cy.get("h1.style-scope > #title").should("contain", "Learning");
-  //Selecting a video ater filter Learning
-  cy.get(
-    ":nth-child(2) > :nth-child(3) > .ytd-item-section-renderer > :nth-child(1) > #contents > .ytd-shelf-renderer > #scroll-container > #items > :nth-child(3) > #dismissible > ytd-thumbnail.style-scope > #thumbnail > .no-transition > #img"
-  ).click();
-  //Waitthing and skipping the ads
-  cy.wait(18000);
-  cy.get(".ytp-ad-skip-button").click();
-  cy.scrollTo("top");
-  cy.wait(5000);
 });

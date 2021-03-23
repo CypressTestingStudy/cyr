@@ -3,8 +3,29 @@
 
 describe("Best of YouTube - Learning filter and asset options", function () {
   beforeEach(function () {
-    //BaseURl
-    cy.youtubeWebSite();
+    //Visiting Youtube
+    cy.visit("https://www.youtube.com/");
+    cy.wait(1000);
+
+    //Selectiong the filter
+    cy.get("#start > #guide-button > #button > #guide-icon")
+      .should("be.visible")
+      .click();
+    cy.get(":nth-child(8) > #endpoint > paper-item.style-scope").click();
+    cy.get("h1.style-scope > #title").should("contain", "Learning");
+
+    //Selecting a video ater filter Learning
+    cy.get(
+      ":nth-child(2) > :nth-child(3) > .ytd-item-section-renderer > :nth-child(1) > #contents > .ytd-shelf-renderer > #scroll-container > #items > :nth-child(3) > #dismissible > ytd-thumbnail.style-scope > #thumbnail > .no-transition > #img"
+    ).click();
+
+    //Waitthing and skipping the ads
+    /*
+    cy.wait(18000);
+    cy.get(".ytp-ad-skip-button").click();
+    cy.scrollTo("top");
+    cy.wait(5000);
+    */
   });
 
   after(function () {
@@ -19,7 +40,7 @@ describe("Best of YouTube - Learning filter and asset options", function () {
 
   // Method to select the filter Learning and play a video from the list
   it("Pausing and Play again", function () {
-    //Pausing the add
+    //Pausing the video
     cy.wait(3000);
     cy.get(".ytp-play-button").click();
     cy.scrollTo("top");
@@ -31,7 +52,7 @@ describe("Best of YouTube - Learning filter and asset options", function () {
 
   it("Forward & Rewind", function () {
     //Forward
-    cy.get(".ytp-progress-bar-padding").click(600, 10);
+    cy.get(".ytp-progress-bar-padding").click(400, 10);
     cy.scrollTo("top");
     cy.wait(10000);
 
@@ -57,9 +78,10 @@ describe("Best of YouTube - Learning filter and asset options", function () {
 
   it.skip("Speed setting", function () {
     //Speed setting
-    cy.get('button[class-"ytp-button ytp-settings-button"]').click();
+    cy.get('button[class-".ytp-button ytp-settings-button"]').click();
+
     cy.contains("Playback speed").click();
-    cy.contains("0,5").click();
+    cy.contains("0,5").click({ force: true });
     cy.scrollTo("top");
     cy.log("Play back speed on");
     cy.wait(10000);
@@ -67,7 +89,7 @@ describe("Best of YouTube - Learning filter and asset options", function () {
     //Speed setting
     cy.get('button[class-"ytp-button ytp-settings-button"]').click();
     cy.contains("Playback speed").click();
-    cy.contains("normal").click();
+    cy.contains("normal").click({ force: true });
     cy.scrollTo("top");
     cy.log("Play back speed on");
     cy.wait(10000);

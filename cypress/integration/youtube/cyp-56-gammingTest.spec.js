@@ -3,8 +3,8 @@
 describe("TS Gaming Video Player - Youtube", function () {
   
   before(function () {
-    cy.selectSectionYT('Videojuegos', 'Fortnite');
-    cy.contains('AHORA').click().wait(5000);
+    cy.selectSectionYT('Videogames', 'Fortnite');
+    cy.contains('NOW').click().wait(5000);
   });
 
   it("[TC01] Should Mute the video and check it", function () {

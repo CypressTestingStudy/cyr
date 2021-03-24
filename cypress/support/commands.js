@@ -28,3 +28,11 @@ Cypress.Commands.add("selectSectionYT", function (label, sectionTab ) {
   });
 });
 
+Cypress.Commands.add("getVege", function (label) {
+  cy.get('.products').find('.product').each(function ($el, index, $list) {
+      const textVeg = $el.find('h4.product-name').text();
+      if (textVeg.includes(label)) {
+          $el.find('button').click();
+      }
+  });
+});

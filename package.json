@@ -29,7 +29,7 @@
     "prettier": "2.2.1"
   },
   "dependencies": {
-    "cosmiconfig": "^6.0.0",
+    "cosmiconfig": "^7.0.0",
     "use-force-update": "^1.0.7"
   },
   "husky": {

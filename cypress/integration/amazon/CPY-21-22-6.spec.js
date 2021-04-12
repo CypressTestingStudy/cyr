@@ -3,7 +3,7 @@
 /// New User
 
 describe("CPY-21", function () {
-    it("New user", function () {
+    it.skip("New user", function () {
         cy.amazonWebSite();
         cy.get("#nav-link-accountList").click();
         cy.get("#createAccountSubmit").click();
@@ -21,7 +21,7 @@ describe("CPY-21", function () {
 /// User already created
 
 describe("CPY-22", function () {
-    it("New user", function () {
+    it.skip("New user", function () {
         cy.amazonWebSite();
         cy.get("#nav-link-accountList").click();
         cy.get("#createAccountSubmit").click();
@@ -44,7 +44,7 @@ describe("CPY-22", function () {
 /// Empty values in form
 
 describe("CPY-6", function () {
-    it("New user", function () {
+    it.skip("New user", function () {
         cy.amazonWebSite();
         cy.get("#nav-link-accountList").click();
         cy.get("#createAccountSubmit").click();

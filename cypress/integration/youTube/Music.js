@@ -8,7 +8,7 @@ describe("Music module on YouTube", function () {
       this.data = data;
     });
   });
-  it("All features to reproduce Music videos", function () {
+  it.skip("All features to reproduce Music videos", function () {
     const homePage = new HomePage();
     const musicPage = new MusicPage();
     const videoPage = new VideoPage();

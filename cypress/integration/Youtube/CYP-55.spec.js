@@ -1,7 +1,7 @@
 // type definitions for Cypress object "cy"
 /// <reference types="cypress"/>
 
-describe("Best of YouTube - Learning filter and asset options", function () {
+describe.skip("Best of YouTube - Learning filter and asset options", function () {
   beforeEach(function () {
     //Visiting Youtube
     cy.visit("https://www.youtube.com/");
@@ -39,7 +39,7 @@ describe("Best of YouTube - Learning filter and asset options", function () {
   });
 
   // Method to select the filter Learning and play a video from the list
-  it("Pausing and Play again", function () {
+  it.skip("Pausing and Play again", function () {
     //Pausing the video
     cy.wait(3000);
     cy.get(".ytp-play-button").click();
@@ -50,7 +50,7 @@ describe("Best of YouTube - Learning filter and asset options", function () {
     cy.scrollTo("top");
   });
 
-  it("Forward & Rewind", function () {
+  it.skip("Forward & Rewind", function () {
     //Forward
     cy.get(".ytp-progress-bar-padding").click(400, 10);
     cy.scrollTo("top");
@@ -62,14 +62,14 @@ describe("Best of YouTube - Learning filter and asset options", function () {
     cy.wait(10000);
   });
 
-  it("Screen resize", function () {
+  it.skip("Screen resize", function () {
     //Screen resize
     cy.get(".ytp-size-button").click();
     cy.scrollTo("top");
     cy.wait(5000);
   });
 
-  it("Close caption", function () {
+  it.skip("Close caption", function () {
     //Close caption
     cy.get(".ytp-subtitles-button").click();
     cy.scrollTo("top");

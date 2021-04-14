@@ -10,7 +10,7 @@ Cypress.Commands.add("loginFashionPage", function (user) {
   cy.get("#email").type(user.email);
   cy.get("#passwd").type(user.pwd);
   cy.get("#SubmitLogin > span").click();
-  cy.get(".logout").contains("Sign out").should("have.text","Sign out");
+  cy.get(".logout").contains("Sign out").should("have.text","\n\t\t\tSign out\n\t\t");
 });
 
 Cypress.Commands.add("loginAmazon", function (user) {

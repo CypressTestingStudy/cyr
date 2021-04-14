@@ -8,7 +8,7 @@ describe("Add a product not available to the car", function () {
       });
 
     // Method to Add a product not available to the cart
-    it("Add a product not available to the cart", function () {
+    it.skip("Add a product not available to the cart", function () {
         //searching a PS5 (not available)
         cy.get('[role="search"]').type("PS5{ENTER}");
         cy.get("#nav-search-submit-button").click();

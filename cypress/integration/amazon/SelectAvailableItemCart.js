@@ -10,7 +10,7 @@ import {
   buyNowItem,
 } from "../../functions/amazon/SelectProduct";
 describe("Add available Item to the cart", function () {
-  it("Select more than one product and add to the cart", function () {
+  it.skip("Select more than one product and add to the cart", function () {
     searchPage();
     selectProduct();
     selectQuantity();
@@ -19,7 +19,7 @@ describe("Add available Item to the cart", function () {
 });
 
 describe("Buy an available item", function () {
-  it("Select one product and click on Buy Now", function () {
+  it.skip("Select one product and click on Buy Now", function () {
     searchPage();
     selectProduct2();
     buyNowItem();
@@ -27,7 +27,7 @@ describe("Buy an available item", function () {
 });
 
 describe("Add available Item to the cart and check it", function () {
-  it("Select more than one product and add to the cart and validate that the product is on the cart", function () {
+  it.skip("Select more than one product and add to the cart and validate that the product is on the cart", function () {
     searchPage();
     selectProduct();
     selectQuantity();

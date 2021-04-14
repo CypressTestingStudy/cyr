@@ -1,11 +1,14 @@
-name: Chrome headless
-on: [push]
+name: PR to Develop run E2E
+on:
+  pull_request: 
+    branches:
+    - develop
 jobs:
   cypress-run:
-    runs-on: ubuntu-16.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: cypress-io/github-action@v2
+      - uses: cypress-io/github-action@v2.8.2
         with:
           browser: chrome
           headless: true

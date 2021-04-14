@@ -4,5 +4,5 @@
 import { CYP14 } from "../../functions/amazon/CYP-14";
 
 describe("CYP-14 add to cart without login increasing amount", function () {
-  it("CYP-14 add to cart without login increasing amount", CYP14);
+  it.skip("CYP-14 add to cart without login increasing amount", CYP14);
 });

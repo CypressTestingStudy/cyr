@@ -8,7 +8,7 @@ describe("Buy Now button without Log-in", function () {
       });
 
     // Method to select a product, go to the "Buy now" button and go to the "Loggin" Page
-    it("Buy Now without logged in", function () {
+    it.skip("Buy Now without logged in", function () {
         cy.get("#twotabsearchtextbox").type("PS4{ENTER}");
         cy.get(
           '[data-asin="B074LRF639"] > :nth-child(1) > .celwidget > .s-include-content-margin > .a-spacing-medium > :nth-child(2) > :nth-child(1) > .sg-col-inner > .a-spacing-none > .rush-component > .a-link-normal > .a-section > .s-image'

@@ -7,7 +7,7 @@ describe("Test Suite for Login Scenarios", function () {
   beforeEach(function () {
     cy.loginAmazon({email: 'giracros@me.com', pwd: 'Temporal123'});
   });
-  it("[Login] Login OK", function () {
+  it.skip("[Login] Login OK", function () {
     loginOk();
   });
 

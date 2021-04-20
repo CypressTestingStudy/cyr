@@ -40,21 +40,19 @@ npx cypress run --testFile.js
 npx cypress run --record --key 49bfa993-ad20-464c-b7ab-d9d27ae262c0
 ```
 
-
-
-Generate With Reports: 
+Generate With Reports:
 
 ```bash
 npx cypress run --reporter mochawesome
 ```
 
-Combine the reports: 
+Combine the reports:
 
 ```bash
 npx mochawesome-merge "cypress/results/*.json" > mochawesome.json
 ```
 
-Generate the HTML Report: 
+Generate the HTML Report:
 
 ```bash
 npx merge mochawesome.json
@@ -91,3 +89,8 @@ cartBuynow
 buyNow.spect.js
 cartKeepbuying
 keepBuying.spect.js
+
+---
+
+**FashionPage:**
+Cypress.Commands.add("loginFashionPage", function (user)

@@ -1,4 +1,4 @@
-interface IAve {  
+/*interface IAve {  
     void comer();
 }
 interface IAveVoladora {  
@@ -34,3 +34,4 @@ class Pinguino implements IAve, IAveNadadora{
         //...
     }
 }
+*/

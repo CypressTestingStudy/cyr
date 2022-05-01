@@ -13,7 +13,7 @@
   "author": "Ella, Rodri, Cris, Henry, Hilder, Dani",
   "license": "MIT",
   "devDependencies": {
-    "@applitools/eyes-cypress": "^3.21.0",
+    "@applitools/eyes-cypress": "^3.25.6",
     "@percy/cypress": "^3.1.0",
     "@testing-library/cypress": "^7.0.3",
     "cypress": "^7.2.0",
